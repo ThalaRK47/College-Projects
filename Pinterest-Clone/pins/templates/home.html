@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<title>Pinterest</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+{% load static %}  
+<link href="{% static 'nav.css' %}" rel="stylesheet">  
+<link rel="stylesheet" href="{% static 'edit.css' %}" >
+</head>
+<body>
+  <div class=" bg-white">
+    <div>{% include 'includes/header.html' %}</div>
+
+
+      <div class="con  mt-2">
+        {% for var in datas %}
+        <!-- <div class="column"> -->
+           
+          <div class="content-wrapper">
+            <div class="image-wrapper">
+              
+              <div class="overlay">
+
+              <div>
+                <p>source  <span><a href=""><i class="tab fas fa-chevron-down"></i></a></span></p>
+                <button class="save">Save</button>
+                
+              </div>
+
+              <div>
+                <button class="spheric-button">
+                
+                    <a href="{{var.link}}" class="text" title="{{var.link}}" target="__blank">{{var.link}}</a>
+                </button>
+                <button class="round-button">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3580/3580382.png" alt="">
+                </button>
+                <button class="round-button">
+                  <img src="https://cdn-icons-png.flaticon.com/512/512/512142.png" alt="">
+                </button>
+              </div>
+
+            </div>
+            <!-- <img src="https://images.pexels.com/photos/772520/pexels-photo-772520.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""> -->
+
+               <!-- <img src="{{var.img.url}}" alt=""> -->
+                <img src="{{ var.img.url }}" alt="">
+            </div>
+            <p>{{var.title}}</p>
+          </div>
+       
+        
+         
+        
+        
+        
+  
+          
+        <!-- </div> -->
+        {% endfor %}
+      </div>
+  </div>
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+</html>

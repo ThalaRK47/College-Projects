@@ -1,0 +1,225 @@
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Login</title>
+    <link rel="icon" href="image/pinterestlogo.png" type="image/gif/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            background-image: url('image/pinterestbg.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #button1{
+            background-color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+            color: #111111;
+            border: 1px solid white;
+            border-radius: 50px;
+            margin-top: 40px;
+            margin-left: 20px;
+            float: left;
+        }
+        #button1:hover{
+            cursor: pointer;
+            background-color: #e2e2e2;
+        }
+        #div1{
+            background-color: white;
+            float: left;
+            margin-left: 400px;
+            width: 497px;
+            padding-bottom: 30px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .fa-pinterest{
+            font-size: 55px;
+            color: red;
+            margin-left: 220px;
+            margin-top: 25px;
+        }
+        #p1{
+            font-size: 42px;
+            font-weight: bold;
+            margin-left: 140px;
+            margin-bottom: 8px;
+            margin-top: 10px;
+        }
+        #p2{
+            font-size: 42px;
+            font-weight: bold;
+            margin-left: 205px;
+            margin-top: 0px;
+            margin-bottom: 22px;
+        }
+        #email,#password{
+            margin-left: 110px;
+            width: 270px;
+            height: 45px;
+            font-size: 17px;
+            padding-left: 13px;
+            color: #E9E9E9;
+            border: 2px solid #d0d0d0;
+            border-radius: 20px;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+        #a1{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-left: 110px;
+            font-size: 17px;
+            
+        }
+        #button2{
+            background-color: #d50c22;
+            width: 290px;
+            margin-left: 110px;
+            margin-top: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 9px;
+            border: 1px solid #d50c22;
+            border-radius: 50px;
+            opacity: 0.9;
+        }
+        #button2:hover{
+            cursor: pointer;
+            opacity: 1;
+        }
+        #p3{
+            margin-left: 245px;
+            font-weight: bold;
+            color: #333333;
+        }
+        #button3{
+            margin-left: 110px;
+            width: 290px;
+            background-color: #1877F2;
+            padding: 7px;
+            border: 1px solid #1877F2;
+            border-radius: 50px;
+        }
+        #button3:hover{
+            cursor: pointer;
+        }
+        #label1{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            float: left;
+            margin-left: 20px;
+            margin-top: 4px;
+        }
+        #label1:hover{
+            cursor: pointer;
+        }
+        .fa-facebook{
+            background-color: whitesmoke;
+            font-size: 22px;
+            border-radius: 60px;
+            padding-bottom: 0px;
+            padding-left: 7px;
+            padding-right: 7px;
+            padding-top: 7px;
+            color: #1877F2;
+            float: left;
+        }
+        #button4{
+            width: 290px;
+            margin-left: 110px;
+            margin-top: 10px;
+            border: 1px solid #D0D0D0;
+            background-color: white;
+            padding: 8px;
+            border-radius: 50px;
+        }
+        #button4:hover{
+            cursor: pointer;
+        }
+        #img1{
+            width: 50px;
+            float: left;
+        }
+        #label2{
+            float: left;
+            margin-top: 4px;
+            font-size: 17px;
+            margin-left: 25px;
+        }
+        #label2:hover{
+            cursor: pointer;
+        }
+        #label3{
+            color: #878787;
+            margin-left: 120px;
+            font-size: 14px;
+        }
+        #b1{
+            margin-left: 188px;
+        }
+        #a2{
+            text-decoration: none;
+            color: #767676;
+            font-size: 14px;
+        }
+        #a2:hover{
+            opacity: 0.8;
+        }
+        #hr1{
+            width: 137px;
+            margin-left: 187px;
+            opacity: 0.3;
+            margin-top: 10px;
+        }
+        #a3{
+            text-decoration: none;
+            margin-left: 165px;
+            color:black;
+            font-weight: bold;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <i class="fa fa-pinterest"></i>
+        <p id="p1">Log in to see</p>
+        <p id="p2">more</p>
+        <form action="" method="post">
+            <input id="email" type="email" name="email" placeholder="Email" required><br>
+            <input id="password" type="password" name="password" placeholder="Password" required><br>
+            <a id="a1" href="">Forgot your password?</a><br>
+            <button id="button2" name="loginbutton">Log in</button>
+        </form>
+        <p id="p3">OR</p>
+        <button id="button3" name="continuewithfacebook">
+            <i class="fa fa-facebook"></i>
+            <label id="label1">Continue with Facebook</label>
+        </button>
+
+        <button id="button4" name="continuewithgoogle">
+            <img id="img1" src="image/google3.png" alt="">
+            <label id="label2">Continue with Google</label>
+        </button> <br><br>
+
+        <label id="label3">By continuing, you agree to Pinterest's </label>
+        <a id="a2" href="https://policy.pinterest.com/en/terms-of-service" target="blank"><b>Terms of</b> <br> <b id="b1">Service,</b></a>
+        <a id="a2" href="https://policy.pinterest.com/en/privacy-policy" target="blank"><b>Privacy Policy.</b></a><br>
+        <hr id="hr1">
+        <a id="a3" href="#">Not on Pinterest yet? Sign up</a>
+
+
+    </div>
+    
+</body>
+</html>
