@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Poppins:wght@300;400;500;700&display=swap');
+
+/* <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet"> 
+font-family: 'Roboto Slab', serif;
+*/
+
+* {
+     font-family: 'Poppins', sans-serif;
+     margin:0;
+     padding:0;
+     box-sizing: border-box;
+ }
+
+ body{
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    background:url(./images/count.jpg);
+    background-size:cover;
+    color:#FF8911;
+    background-position: center;
+ }
+
+ .container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 45vw;
+    height: 80vh;
+    
+ }
+
+.counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+p{
+    font-size: 14px;
+    text-shadow: 0.6px 0.4px 0.4px rgba(0, 0, 0, 0.7);
+}
+
+.newyear{
+    font-family: 'Inspiration', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top:30px;
+    text-shadow: 0.6px 0.4px 0.4px rgba(0, 0, 0, 0.7);
+}
+
+.box{
+    width:50px;
+    height:50px;
+    text-align: center;
+    background-color: rgba(255, 136, 0, 0.2);
+    border-radius: 16%;
+    border: none;
+    border: 0.6px inset rgba(255, 136, 0, 0.2);
+}
+
+.box h2{
+    font-size:20px;
+    font-weight: 500;
+    text-shadow: 1.2px 1.1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.box small{
+    font-size:10px;
+    text-shadow: 0.6px 0.4px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Media Queries */
+
+
+
+@media (min-width:576px){
+    
+    .container{
+        width: 86vw;
+        height: 88vh;
+    }
+    
+    .newyear{
+        font-size:100px;
+    }
+
+    p{
+        font-size:18px;
+    }
+
+    .box h2{
+        font-size: 30px;
+    }
+
+    .box{
+        width:50px;
+        height:50px;
+    }
+
+    .box small{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:768px){
+    .newyear{
+        font-size:150px;
+    }
+
+    p{
+        font-size:25px;
+    }
+
+    .box h2{
+        font-size:50px;
+    }
+
+    .box{
+        width:130px;
+        height:100px;
+    }
+
+    .box small{
+        font-size:20px;
+    }
+}
+
+@media (min-width:768px){
+    .newyear{
+        font-size:150px;
+    }
+
+    p{
+        font-size:25px;
+    }
+
+    .box h2{
+        font-size:50px;
+    }
+
+    .box{
+        width:130px;
+        height:100px;
+    }
+
+    .box small{
+        font-size:20px;
+    }
+}
+
+
+@media (max-width:1150px){
+    .container{
+    background:transparent;
+    background-color: rgba(226, 138, 29, 0.23);
+    border-radius: 8%;
+    border: none;
+    border-left: 2.5px solid rgba(226, 138, 29);
+    border-top: 2.75px solid rgba(226, 138, 29);
+    box-shadow: 0.5px 0.8px 16px 5px rgba(226, 138, 29);
+    }
+
+    .box{
+        width:125px;
+        height:125px;
+    }
+}
+
+@media (max-width:2450px){
+    .box{
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width:640px){
+    .container{
+        height: 40vh;
+        width: 80vw;
+    }
+
+    .box{
+        width:35px;
+        height:35px;
+    }
+
+    .newyear{
+        font-size:60px;
+    }
+
+    p{
+        font-size:12px;
+    }
+
+    .box h2{
+        font-size:20px;
+    }
+
+    .box small{
+        font-size:7px;
+    }
+
+    .counter{
+        gap: 18px;
+    }
+}
